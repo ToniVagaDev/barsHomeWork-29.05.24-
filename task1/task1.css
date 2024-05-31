@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200vh;
+}
+a{
+    text-decoration: none;
+    color: black;
+    align-self: center;
+}
+
+a:visited{
+    color: gray;
+}
+
+a:hover{
+    color: green;
+    text-decoration: underline;
+}
+a:active{
+    color: blue;
+}
+#smtInteresting{
+    color: green;
+    align-self: center;
+    animation: animation 8s infinite linear;
+}
+
+@keyframes animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+
+    }
+}
